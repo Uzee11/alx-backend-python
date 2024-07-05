@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
-"""Defines annotated variables"""
+"""
+Complex types - list of floats
+"""
+from typing import List
 
 
-a: int = 1
-pi: float = 3.14
-i_understand_annotations: bool = True
-school: str = "Holberton"
+def sum_list(input_list: List[float]) -> float:
+    """
+    return a sum of all nums inside a list
+    """
+    return sum(input_list)
